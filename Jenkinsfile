@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                gradle wrapper --gradle-version 7.4.2
+                sh 'gradle wrapper'
                 sh './gradlew check'
             }
         }
